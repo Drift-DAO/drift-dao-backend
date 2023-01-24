@@ -37,7 +37,7 @@ DAORouter.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () 
             res.send('no dao found');
             return;
         }
-        // console.log('result-1 is: ', result);
+        console.log('result-1 is: ', result);
         let newResult = Object.assign(Object.assign({}, result), { isMember: false });
         const ifAlreadyMember = yield DAOSchema_js_1.DAOmemberModel.findOne({
             userAddr,

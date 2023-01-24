@@ -26,7 +26,7 @@ DAORouter.get('/', async (req, res) => {
 			res.send('no dao found');
 			return;
 		}
-		// console.log('result-1 is: ', result);
+		console.log('result-1 is: ', result);
 
 		let newResult = {
 			...result,
