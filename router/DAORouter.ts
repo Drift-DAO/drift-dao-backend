@@ -29,7 +29,7 @@ DAORouter.get('/', async (req, res) => {
 		console.log('result-1 is: ', result);
 
 		let newResult = {
-			...result,
+			result,
 			isMember: false,
 		};
 		const ifAlreadyMember = await DAOmemberModel.findOne({
