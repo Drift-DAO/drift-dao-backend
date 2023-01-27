@@ -9,7 +9,7 @@ import ContactFormRouter from './router/ContactFormRouter.js';
 import DAORouter from './router/DAORouter.js';
 import VotingRouter from './router/VotingRouter.js';
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.use(express.json());
